@@ -36,3 +36,86 @@
     transform: rotate(360deg);
   }
 }
+.App{
+  position:absolute;
+  top:0;
+  left:0;
+  background-image: url('./imgs/computerBG.png');
+  width:100%;
+  height:100%;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+/* Login starts here */
+.loginContainer{
+  margin-top:20%;
+  margin-left:25%;
+  display:flex;
+  flex-direction:column;
+  width:50%;
+ 
+}
+
+.loginContainer button{
+  border-radius:15px;
+  margin:15px;
+  background-color:#73c39e;
+  color:white;
+  font-size:24px;
+
+}
+.buttonBox{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+/* Login stops here  */
+
+/* Home starts here  */
+.homeContainer{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  
+
+}
+.nav{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction:row;
+  font-size: 2rem;
+  margin-left:30%;
+  margin-top:20%;
+  
+  
+}
+.navBar li{
+list-style-type: none;
+margin-right:20px;
+}
+.homeContainer h1{
+  align-self:center;
+  margin-right:30%;
+  font-size: 3rem;;
+}
+/* Home stops here  */
+
+/* Signup starts here  */
+.signupContainer{
+  margin-top:20%;
+}
+.formInput{
+  margin-bottom:15px;
+}
+
+.signupContainer button{
+  border-radius:15px;
+}
+.signupForm label{
+  margin-right:10px;
+}
+/* Signup stops here  */
