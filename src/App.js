@@ -10,6 +10,8 @@ import SignUp from './components/SignUp'
 import Assignments from './components/Assignments'
 import Practice from './components/Practice'
 import Journal from './components/Journal'
+import Chores from './components/Chores'
+import Calendar from './components/Calendar'
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
           <Route path = '/assignments/:userID' element = { <Assignments /> } />
           <Route path = '/practice/:userID' element = { <Practice /> } />
           <Route path = '/journal/:userID' element = { <Journal /> } />
+          <Route path = '/chores/:userID' element = { <Chores /> } />
+          <Route path = '/calendar/:userID' element = { <Calendar /> } />
         </Routes>
       </Router>
     </div>
