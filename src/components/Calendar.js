@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom'
 
-const Practice = () => {
+const Calendar = () => {
     const location = useLocation()
     const { assignments, affirmation, calendars, blogs, chores } = location.state
     console.log(assignments)
@@ -15,4 +15,4 @@ const Practice = () => {
         </div>
     )
 }
-export default Practice
+export default Calendar

@@ -71,14 +71,20 @@
   flex-wrap:wrap;
   justify-content: space-between;
 }
+.loading{
+  margin-top:20%;
+  font-size:3rem;
+}
 /* Login stops here  */
 
 /* Home starts here  */
 .homeContainer{
-  width:100%;
-  height:100%;
+
   display:flex;
   flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  margin-top:200px;
   
 
 }
@@ -88,8 +94,7 @@
   display:flex;
   flex-direction:row;
   font-size: 2rem;
-  margin-left:30%;
-  margin-top:20%;
+  
   
   
 }
@@ -98,9 +103,8 @@ list-style-type: none;
 margin-right:20px;
 }
 .homeContainer h1{
-  align-self:center;
-  margin-right:30%;
-  font-size: 3rem;;
+ 
+  font-size: 2.2rem;;
 }
 /* Home stops here  */
 

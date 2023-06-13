@@ -8,6 +8,7 @@ const Login = () =>{
     const navigate = useNavigate()
 
     const [ users, setUsers ] = useState([])
+  
 
     const fetchUserData = async () => {
         const url = 'https://homeschool-app.onrender.com/users'
@@ -16,45 +17,17 @@ const Login = () =>{
         setUsers(data)
     } 
 
+   
     useEffect(()=>{
         fetchUserData()
     },[])
-console.log(users)
+    console.log(users)
 
-    const handleChange = (event) => {
-        user = event.target.value
+
+    // conditional rendering
+    if(users.length === 0){
+        return <div className="loading">Loading...</div>
     }
-    const findUser = () =>{
-        let found = 0 
-        users.forEach(person =>{
-            if(person.username === user){
-                found = 1
-                console.log('found user')
-                navigate(`/home/${person.id}/${person.firstName}`)
-
-            }
-        })
-        if(found===0){
-            error="Username not found.  Try again or sign up."
-            console.log(found)
-            console.log(error)
-            return(error)
-        }
-    }
-    const handleSubmit = async (event) => {
-        event.preventDefault()
-        console.log(user)
-        console.log(users)
-        findUser()
-
-        
-
-        
-    }
-    //conditional rendering
-    // if(users.length === 0){
-    //     return <div>Loading...</div>
-    // }
     console.log(error)
     return (
         <div className="loginContainer">
