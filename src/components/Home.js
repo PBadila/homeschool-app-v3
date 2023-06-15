@@ -2,6 +2,8 @@ import { useNavigate, Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
+import Header from './Header'
+
 const Home = () => {
     const { userInfo } = useParams()
     console.log(userInfo)
@@ -69,15 +71,24 @@ const Home = () => {
 
     return(
         <div className="homeContainer">
-            <div className="navBar">
+            <Header 
+            assignments={assignments}
+            affirmation={affirmation} 
+            calendars={calendars}
+            blogs={blogs} 
+            chores={chores}
+            userID={userID}
+            />
+            {/* <div className="navBar">
                 <ul className="nav">
+                    <Link to = {`/affirmation/${userID}`} state= {{assignments:assignments, affirmation:affirmation, calendars:calendars, blogs:blogs, chores:chores}}><li>Affirmation</li></Link>
                     <Link to = {`/assignments/${userID}`} state= {{assignments:assignments, affirmation:affirmation, calendars:calendars, blogs:blogs, chores:chores}}><li>Assignments</li></Link>
                     <Link to = {`/practice/${userID}`} state= {{assignments:assignments, affirmation:affirmation, calendars:calendars, blogs:blogs, chores:chores}}><li>Practice</li></Link>
                     <Link to = {`/journal/${userID}`} state= {{assignments:assignments, affirmation:affirmation, calendars:calendars, blogs:blogs, chores:chores}}><li>Journal</li></Link> 
                     <Link to = {`/chores/${userID}`} state= {{assignments:assignments, affirmation:affirmation, calendars:calendars, blogs:blogs, chores:chores}}><li>Chores</li></Link>
                     <Link to = {`/calendar/${userID}`} state= {{assignments:assignments, affirmation:affirmation, calendars:calendars, blogs:blogs, chores:chores}}><li>Calendar</li></Link>
                 </ul>
-            </div>
+            </div> */}
             <h1> Sawubona Beautiful Spirit {userName}!</h1>
             <h2>Today is an amazing day!</h2>
         </div>

@@ -123,3 +123,124 @@ margin-right:20px;
   margin-right:10px;
 }
 /* Signup stops here  */
+
+/* Head starts here */
+.nav{
+  width:100%;
+  height:100px;
+  background-color:black;
+  color:white;
+  position: absolute;
+  top:0;
+  left:0%;
+  font-size:1.5rem;
+ 
+
+
+}
+.nav ul{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+
+}
+.nav ul li{
+  list-style-type:none;
+}
+.nav ul a:link{
+  color:white;
+}
+.nav ul a:visited{
+  color:#f8d073;
+}
+.nav ul a:hover{
+  color:#73c39e;
+}
+.nav ul a:active{
+  color:#a49fce;
+}
+/* Header stops here */
+
+/* Affirmation start */
+.affirm{
+  /* background-color:#f8d073; */
+  padding:30px;
+  margin-top:100px;
+  color:white;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  margin-bottom:250px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  font-size:1.3rem;
+  font-family: 'Architects Daughter', cursive;
+}
+.affirm .affirmWords{
+  margin-top:200px;
+}
+.affirm .imgBox{
+  width:35%;
+  align-self: flex-start;
+}
+.affirm .affImg{
+  width:100%;
+}
+/* Affirmation stops here  */
+
+/* Assignment starts here  */
+.container{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  background-color:#73c39e;
+  padding-top:100px;
+  height:100%;
+}
+.assignmentContainer{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  background-color:#73c39e;
+  height:100%;
+  padding:130px;
+  margin-top:100px;
+  
+}
+
+.assignCard{
+  width:300px;
+  background-color:#a089e4;
+  margin:20px;
+  border-radius:30px;
+  color:white;
+  padding:30px;
+  height:400px;
+}
+
+.assignImgBox{
+  width:80%;
+  margin-right:auto;
+  margin-left:auto;
+  padding:10px;
+}
+.assignImg{
+  width:80%;
+}
+
+.assignCard h1{
+  margin-top:0;
+}
+
+.completeCheck{
+  height:33px;
+  width:33px;
+}
+
+.checkBoxBox{
+
+}
+
+/* Assignment ends here */

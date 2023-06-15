@@ -12,6 +12,7 @@ import Practice from './components/Practice'
 import Journal from './components/Journal'
 import Chores from './components/Chores'
 import Calendar from './components/Calendar'
+import Affirmation from './components/Affirmation'
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path = '/journal/:userID' element = { <Journal /> } />
           <Route path = '/chores/:userID' element = { <Chores /> } />
           <Route path = '/calendar/:userID' element = { <Calendar /> } />
+          <Route path = '/affirmation/:userID' element = { <Affirmation /> } />
         </Routes>
       </Router>
     </div>
