@@ -13,6 +13,7 @@ const Header = ({assignments,affirmation,calendars,blogs,chores,userID}) => {
                     <Link to = {`/journal/${userID}`} state= {{assignments:assignments, affirmation:affirmation, calendars:calendars, blogs:blogs, chores:chores, userID:userID}}><li>Journal</li></Link> 
                     <Link to = {`/chores/${userID}`} state= {{assignments:assignments, affirmation:affirmation, calendars:calendars, blogs:blogs, chores:chores, userID:userID}}><li>Chores</li></Link>
                     <Link to = {`/calendar/${userID}`} state= {{assignments:assignments, affirmation:affirmation, calendars:calendars, blogs:blogs, chores:chores, userID:userID}}><li>Calendar</li></Link>
+                    <Link to = '/'>Logout</Link>
                 </ul>
             </div>
     )

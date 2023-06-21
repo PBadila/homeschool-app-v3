@@ -13,6 +13,13 @@ import Journal from './components/Journal'
 import Chores from './components/Chores'
 import Calendar from './components/Calendar'
 import Affirmation from './components/Affirmation'
+import Administrative from './components/Administrative'
+import AddAssignments from './components/AddAssignments';
+import AddAffirmations from './components/AddAffirmations';
+import AddEvents from './components/AddEvents';
+import AddChores from './components/AddChores';
+import AddPractice from './components/AddPractice';
+
 
 
 function App() {
@@ -30,6 +37,12 @@ function App() {
           <Route path = '/chores/:userID' element = { <Chores /> } />
           <Route path = '/calendar/:userID' element = { <Calendar /> } />
           <Route path = '/affirmation/:userID' element = { <Affirmation /> } />
+          <Route path = '/administrative/:userID' element = { <Administrative /> } />
+          <Route path = '/addassignments' element = { <AddAssignments /> } />
+          <Route path = '/addaffirmations' element = { <AddAffirmations /> } />
+          <Route path = '/addevents' element = { <AddEvents /> } />
+          <Route path = '/addchores' element = { <AddChores /> } />
+          <Route path = '/addpractice' element = { <AddPractice /> } />
         </Routes>
       </Router>
     </div>

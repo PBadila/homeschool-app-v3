@@ -34,7 +34,12 @@ const Login = () =>{
           <h1>Click on your username or <a href="/signup">sign up</a></h1>
           <div className="buttonBox">
                 {users.map(person => (
+                    // here I used ? instead of && since there was an alternative
+                    person.id !== 5 ? (
                     <Link to = {`/home/${person.id}_${person.firstName}`} key={person.id}><button>{person.username}</button></Link>
+                    ): (
+                    <Link to = {`/administrative/${person.id}_${person.firstName}`} key={person.id}><button>{person.username}</button></Link> 
+                    )
                 ))}
             </div>
         </div>
