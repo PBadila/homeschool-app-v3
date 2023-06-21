@@ -38,7 +38,7 @@ const Login = () =>{
                     person.id !== 5 ? (
                     <Link to = {`/home/${person.id}_${person.firstName}`} key={person.id}><button>{person.username}</button></Link>
                     ): (
-                    <Link to = {`/administrative/${person.id}_${person.firstName}`} key={person.id}><button>{person.username}</button></Link> 
+                    <Link to = {`/administrative/`} key={person.id}><button>{person.username}</button></Link> 
                     )
                 ))}
             </div>

@@ -37,7 +37,7 @@ function App() {
           <Route path = '/chores/:userID' element = { <Chores /> } />
           <Route path = '/calendar/:userID' element = { <Calendar /> } />
           <Route path = '/affirmation/:userID' element = { <Affirmation /> } />
-          <Route path = '/administrative/:userID' element = { <Administrative /> } />
+          <Route path = '/administrative' element = { <Administrative /> } />
           <Route path = '/addassignments' element = { <AddAssignments /> } />
           <Route path = '/addaffirmations' element = { <AddAffirmations /> } />
           <Route path = '/addevents' element = { <AddEvents /> } />

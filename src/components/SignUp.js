@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 const SignUp = () => {
     return (
         <div className="signupContainer">
@@ -16,6 +17,7 @@ const SignUp = () => {
                 </div>
                 <button>Submit</button>
             </form>
+            <Link to ='/'><button>Return to Login</button></Link>
         </div>
     )
 }
